@@ -15,7 +15,7 @@ import { ref, onMounted } from 'vue';
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
 import LineIcon from './components/LineIcon.vue';
-import Loading from './components/Loading.vue'; // 引入Loading組件
+import Loading from './components/Loading.vue'; 
 
 const isLoading = ref(true); // 初始化時設置isLoading為true
 

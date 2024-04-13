@@ -1,7 +1,7 @@
 <template>
     <div 
         id="carouselExampleAutoplaying" 
-        class="carousel slide mb-5 border-bottom" 
+        class="carousel slide mb-5" 
         data-bs-ride="carousel" 
         data-bs-interval="5000"
     >
