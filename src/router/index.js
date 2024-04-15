@@ -62,8 +62,8 @@ const routes = [
 
 
 const router = createRouter({
-  // history: createWebHashHistory('/JJWEB/'),
-  history: createWebHistory('/JJWEB/'),
+  history: createWebHashHistory('/JJWEB/'),
+  // history: createWebHistory('/JJWEB/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

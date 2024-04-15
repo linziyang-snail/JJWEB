@@ -24,7 +24,8 @@
 ––
 <script setup>
 // import bannerImage from '../../assets/banner1-img.jpg';
-import bannerImage from '../../assets/home1.jpg';
+import bannerImage from '../../assets/home1.webp';
+
 
 </script>
 
