@@ -1,16 +1,9 @@
 <template>
-  <div class="loading-overlay bg-black" v-if="isLoading">
+  <div class="loading-overlay" v-if="isLoading">
     <div class="loading-content">
       <img src="../assets/JIEJIANG_Logo.png" alt="Brand Logo" class="logo">
       <div class="progress">
-        <div 
-          class="progress-bar" 
-          role="progressbar" 
-          :style="{ width: progress + '%' }"
-          :aria-valuenow="progress"
-          aria-valuemin="0" 
-          aria-valuemax="100"
-        >
+        <div class="progress-bar" role="progressbar" :style="{ width: progress + '%' }" aria-valuemin="0" aria-valuemax="100">
         </div>
       </div>
     </div>
@@ -18,24 +11,12 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue';
+import { defineProps } from 'vue';
 
-const isLoading = ref(true);
-const progress = ref(0);
-
-onMounted(() => {
-const interval = setInterval(() => {
-  if (progress.value < 100) {
-    progress.value += 20; 
-  } else {
-    isLoading.value = false;
-    clearInterval(interval);
-  }
-}, 500);
+const props = defineProps({
+  isLoading: Boolean,
+  progress: Number
 });
-
-
-
 </script>
 
 <style>
@@ -48,18 +29,17 @@ const interval = setInterval(() => {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
-
 .loading-content .logo {
   width: 200px;
   margin-bottom: 20px;
 }
-
 .progress {
   width: 100%;
 }
-
 .progress-bar {
   background-color: #F6452D !important;
+  height: 20px;
 }
 </style>

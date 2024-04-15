@@ -1,9 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
-import Services from '../views/Services.vue';
-import Project from '../views/Project.vue';
-import Contact from '../views/Contact.vue';
+
+// 使用动态导入来定义路由组件
+const Home = () => import(/* webpackChunkName: "home" */'../views/Home.vue');
+const About = () => import(/* webpackChunkName: "about" */'../views/About.vue');
+const Services = () => import(/* webpackChunkName: "services" */'../views/Services.vue');
+const Project = () => import(/* webpackChunkName: "project" */'../views/Project.vue');
+const Contact = () => import(/* webpackChunkName: "contact" */'../views/Contact.vue');
 
 const routes = [
   {

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Loading v-if="isLoading" />
-    <div v-else>
+    <Loading :is-loading="isLoading" :progress="progress" />
+    <div v-if="!isLoading">
       <NavBar />
       <router-view />
       <Footer />
@@ -15,13 +15,35 @@ import { ref, onMounted } from 'vue';
 import NavBar from './components/NavBar.vue';
 import Footer from './components/Footer.vue';
 import LineIcon from './components/LineIcon.vue';
-import Loading from './components/Loading.vue'; 
+import Loading from './components/Loading.vue';
 
-const isLoading = ref(true); // 初始化時設置isLoading為true
+import aboutBannerImage from "./assets/about2.jpg";
+import servicesBannerImage from "./assets/DSC_9668.jpg";
+import projectBannerImage from "./assets/about3.jpg";
+import contactBannerImage from "./assets/about4.jpg";
 
-onMounted(() => {
-  setTimeout(() => {
-    isLoading.value = false; // 3到5秒後將isLoading設置為false
-  }, 3000); // 這裡設置為3000毫秒，即3秒
-});
+const isLoading = ref(true);
+const progress = ref(0);
+
+function preloadImages() {
+  const images = [aboutBannerImage, servicesBannerImage, projectBannerImage, contactBannerImage];
+  let loaded = 0;
+
+  images.forEach((src) => {
+    const img = new Image();
+    img.onload = img.onerror = () => {
+      loaded++;
+      progress.value = Math.floor((loaded / images.length) * 100);
+      
+      if (loaded === images.length) {
+        setTimeout(() => {
+          isLoading.value = false;
+        }, 1500);
+      }
+    };
+    img.src = src;
+  });
+}
+
+onMounted(preloadImages);
 </script>
