@@ -26,16 +26,21 @@
     align-items: center;
     justify-content: center;
     z-index: 99;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  .nav-link:hover .line-icon {
+  transform: scale(1.2);
+}
   
-  /* 媒体查询，适应手机屏幕 */
+
   @media (max-width: 768px) {
     .line-icon {
       bottom: 20px;
       right: 20px;
       width: 50px;
       height: 50px;
-      font-size: 24px; /* 调整字体大小以适应较小的图标尺寸 */
+      font-size: 24px;
     }
   }
   </style>
