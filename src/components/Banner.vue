@@ -24,10 +24,6 @@
 <script setup>
 import { computed } from "vue";
 import { useRoute } from "vue-router";
-// import aboutBannerImage from "../assets/banner2-img.jpg";
-// import servicesBannerImage from "../assets/banner3-img.jpg";
-// import projectBannerImage from "../assets/banner4-img.jpg";
-// import contactBannerImage from "../assets/banner5-img.jpg";
 
 import aboutBannerImage from "../assets/about2.jpg";
 import servicesBannerImage from "../assets/DSC_9668.jpg";
@@ -95,7 +91,7 @@ const breadcrumbItems = computed(() => {
 </script>
 
 
-<style>
+<style scoped>
 #hero {
     display: flex;
     justify-content: center;
@@ -114,6 +110,19 @@ const breadcrumbItems = computed(() => {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center; 
+}
+
+
+.col-md-6.offset-md-3 {
+    margin: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 

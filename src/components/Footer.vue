@@ -1,7 +1,7 @@
 <template>
         <section id="footer">
                 <div style="overflow: hidden;">
-                        <div class="container" data-aos="zoom-out">
+                        <div class="container">
                                 <div class="d-flex flex-wrap">
                                 <div class="col-12 col-md-4 d-flex justify-content-center align-items-center border-end-md">
                                         <img class="img-fluid" src="../assets/Logo-1.png" alt="logo" style="max-width: 100%; height: auto; width: 18rem;">

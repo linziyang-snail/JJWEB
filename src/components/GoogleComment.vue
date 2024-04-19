@@ -138,7 +138,7 @@ const reviewChunks = computed(() => {
 });
 </script>
 
-<style>
+<style scoped>
 .review-card {
   margin: 20px 0;
   background-color: #f8f9fa; /* 轻灰色背景 */

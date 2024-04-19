@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     vue(),
     seoPrerender({
-      routes: ['/', '/about', '/project', '/services', '/contact'],
+      routes: ['/', '/about', '/project', '/services', '/contact', '/product'],
     })
   ],
   base: '/JJWEB/',

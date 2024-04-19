@@ -196,7 +196,3 @@ const processPrice = (price) => {
 };
 
 </script>
-
-<style>
-
-</style>

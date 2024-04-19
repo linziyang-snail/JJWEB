@@ -6,6 +6,7 @@ const About = () => import(/* webpackChunkName: "about" */'../views/About.vue');
 const Services = () => import(/* webpackChunkName: "services" */'../views/Services.vue');
 const Project = () => import(/* webpackChunkName: "project" */'../views/Project.vue');
 const Contact = () => import(/* webpackChunkName: "contact" */'../views/Contact.vue');
+const Product = () => import(/* webpackChunkName: "product" */'../views/Product.vue');
 
 const routes = [
   {
@@ -57,6 +58,11 @@ const routes = [
       keywords: '联系捷匠, 汽車美容联系',
       description: '如何联系到捷匠專業汽車美容'
     }
+  },
+  {
+    path: '/product',
+    name: 'Product',
+    component: Product,
   },
 ];
 
