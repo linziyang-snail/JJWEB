@@ -23,12 +23,12 @@
 </template>
 ––
 <script setup>
-// import bannerImage from '../../assets/banner1-img.jpg';
 import bannerImage from '../../assets/home1.webp';
 
 
 </script>
 
+<link rel="preload" href="../../assets/home1.webp" as="image"></link>
 
 <style>
 #hero {
