@@ -1,1 +1,0 @@
-#hero{display:flex;justify-content:center;align-items:center;height:100vh;position:relative;background-size:cover;background-position:center center}#hero:before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background-color:#0006}
