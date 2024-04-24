@@ -28,7 +28,7 @@ import bannerImage from '../../assets/home1.jpg';
 
 </script>
 
-<link rel="preload" href="../../assets/home1.jpg" as="image"></link>
+
 
 <style>
 #hero {

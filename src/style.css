@@ -223,6 +223,18 @@ h6,
     border-color: darken(var(--bs-towa-blue), 20%);
 }
 
+.btn-towa-blue-product {
+    --bs-btn-color: #fff; /* 文字顏色 */
+    --bs-btn-bg: var(--bs-towa-blue); /* 背景顏色 */
+    --bs-btn-border-color: var(--bs-towa-blue); /* 邊框顏色 */
+
+    --bs-btn-hover-color: #black; /* 懸停時的文字顏色 */
+    --bs-btn-hover-bg: darken(var(--bs-towa-blue), 10%); /* 懸停時的背景顏色 */
+    --bs-btn-hover-border-color: darken(var(--bs-towa-blue), 10%); /* 懸停時的邊框顏色 */
+
+}
+
+
 
 /* button arrow style  */
 iconify-icon.arrow-icon {

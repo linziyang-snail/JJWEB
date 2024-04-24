@@ -26,7 +26,7 @@ const routes = [
     meta: {
       title: '捷匠專業汽車美容 - 關於捷匠',
       keywords: '捷匠汽車美容, 關於捷匠',
-      description: '了解捷匠專業汽車美容的服务和历史'
+      description: '了解捷匠專業汽車美容的服務和歷史'
     }
   },
   {
@@ -34,9 +34,9 @@ const routes = [
     name: 'Project',
     component: Project,
     meta: {
-      title: '捷匠專業汽車美容 - 项目展示',
+      title: '捷匠專業汽車美容 - 項目展示',
       keywords: '汽車项目, 汽車美容案例',
-      description: '查看捷匠汽車美容的精选项目'
+      description: '查看捷匠汽車美容的精選項目'
     }
   },
   {
@@ -44,9 +44,9 @@ const routes = [
     name: 'Services',
     component: Services,
     meta: {
-      title: '捷匠專業汽車美容 - 服务列表',
-      keywords: '汽車美容服务, 高品质汽車保养',
-      description: '探索捷匠提供的各种汽車美容服务'
+      title: '捷匠專業汽車美容 - 服務列表',
+      keywords: '汽車美容服務, 高品質汽車保养',
+      description: '探索捷匠提供的各種汽車美容服務'
     }
   },
   {
@@ -54,9 +54,9 @@ const routes = [
     name: 'Contact',
     component: Contact,
     meta: {
-      title: '捷匠專業汽車美容 - 联系方式',
-      keywords: '联系捷匠, 汽車美容联系',
-      description: '如何联系到捷匠專業汽車美容'
+      title: '捷匠專業汽車美容 - 聯繫方式',
+      keywords: '聯繫捷匠, 汽車美容',
+      description: '如何聯繫到捷匠專業汽車美容'
     }
   },
   {
@@ -82,8 +82,8 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const defaultTitle = '捷匠專業汽車美容';
-  const defaultDescription = '提供最专业的汽车美容服务。';
-  const defaultKeywords = '汽车美容, 淡水, 洗车';
+  const defaultDescription = '提供最專業的汽車美容服務。';
+  const defaultKeywords = '汽車美容, 淡水, 洗車';
 
   document.title = to.meta.title || defaultTitle;
   updateMeta('description', to.meta.description || defaultDescription);
