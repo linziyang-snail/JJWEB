@@ -18,9 +18,9 @@
     <div data-aos="fade-up" data-aos-delay="500">
       <PriceTableCarousel />
     </div>
-    <div data-aos="fade-up" data-aos-delay="600">
+    <!-- <div data-aos="fade-up" data-aos-delay="600">
       <GoogleMap />
-    </div>
+    </div> -->
   </div>
 </template>
 

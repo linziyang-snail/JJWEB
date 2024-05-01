@@ -76,7 +76,7 @@ const navLinks = [
   { name: "首頁", path: "/" },
   { name: "關於捷匠", path: "/about" },
   { name: "施工實照", path: "/project" },
-  { name: "商品總覽", path: "/product" },
+  // { name: "商品總覽", path: "/product" },
   { name: "服務項目", path: "/services" },
   { name: "聯繫我們", path: "/contact" },
 ];
